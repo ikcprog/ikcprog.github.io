@@ -4,7 +4,7 @@ layout: page
 title:  "Приветствие"
 
 categories: jekyll
-pin: true
+
 ---
 Этот сайт предназначается для...
 
