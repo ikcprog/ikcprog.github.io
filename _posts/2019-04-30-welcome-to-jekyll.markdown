@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Куда я попал?"
+title:  "Приветствие"
 
 categories: jekyll update
 ---
