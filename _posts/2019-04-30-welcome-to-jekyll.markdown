@@ -7,5 +7,10 @@ categories: jekyll update
 Этот сайт предназначается для...
 
 {%highlight   c++%}
-cin>>s;
+#include <iostream>
+using namespace std;
+int main()
+  {
+  cout<<"Hello, world!";
+  }
 {%endhighlight%}
