@@ -1,3 +1,4 @@
+pin: true
 ---
 layout: page
 title:  "Приветствие"
