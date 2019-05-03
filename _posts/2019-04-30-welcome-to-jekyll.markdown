@@ -2,7 +2,7 @@
 layout: page
 title:  "Приветствие"
 
-categories: jekyll update
+categories: jekyll
 ---
 Этот сайт предназначается для...
 
