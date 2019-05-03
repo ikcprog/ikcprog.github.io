@@ -6,4 +6,4 @@ layout: home
 ---
 Добро пожаловать!
 {% assign pinned = site.posts | where_exp:"item", "item.pin == true" %}
-ghbdtn
+
