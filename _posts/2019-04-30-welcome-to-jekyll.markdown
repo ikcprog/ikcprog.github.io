@@ -6,7 +6,7 @@ categories: jekyll
 ---
 Этот сайт предназначается для...
 
-{%highlight   c++%} C++
+{%highlight   c++%}
 #include <iostream>
 using namespace std;
 int main()
