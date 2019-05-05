@@ -5,7 +5,7 @@ categories: jekyll
 ---
 Этот сайт предназначается для...
 
-{% highlight cpp linenos %}
+{% highlight cpp %}
 
 #include <iostream>
 using namespace std;
