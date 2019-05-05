@@ -5,7 +5,7 @@ categories: jekyll
 ---
 Этот сайт предназначается для...
 
-{% highlight c++ linenos %}
+{% highlight cpp linenos %}
 #include <iostream>
 using namespace std;
 int main()
@@ -13,4 +13,4 @@ int main()
   cout<<"Hello, world!";
   return 0;
   }
-{%endhighlight%}
+{% endhighlight %}
