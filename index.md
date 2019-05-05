@@ -4,6 +4,6 @@
 
 layout: home
 ---
-Добро пожаловать!
+Добро пожаловать! Школа олимпиадного перограммирования ИКЦ
 {% assign pinned = site.posts | where_exp:"item", "item.pin == true" %}
 
