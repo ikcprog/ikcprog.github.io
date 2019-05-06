@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Результаты олимпиад
+title: Полезные ссылки
 permalink: links/
 ---
