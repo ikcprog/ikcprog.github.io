@@ -1,1 +1,80 @@
+---
+---
 
+@import "{{ site.theme }}";
+
+pre {
+  border: 0px;
+  padding: 6px 9px;
+  margin-bottom: 2px;
+}
+
+blockquote {
+  font-style: normal;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+  width:         calc(40% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+  width:         calc(60% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+// https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width
+.video-wrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Strip some default table decorations from Minima.
+table.rouge-table {
+  margin-bottom: 0px;
+  border: 0px;
+  
+  td {
+    padding: 0px ($spacing-unit / 4);
+    border: 0px;
+  }
+}
+
+// TODO remove this, find a way to use a special class for images in topics.
+.post-content img {
+  display: block;
+  margin: auto;
+}
+
+.post-content img.emoji {
+  display: inline;
+}
+
+// Medal icons
+
+img.medal {
+  display: inline-block;
+  height: 1.4em;
+}
