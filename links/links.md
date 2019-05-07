@@ -3,4 +3,4 @@ layout: page
 title: Ссылки
 permalink: links/
 ---
-[brestprog.neocities.org](http://brestprog.neocities.org)
+[Timus Online Judge](http://acm.timus.ru)
