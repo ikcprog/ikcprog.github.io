@@ -2,7 +2,7 @@
 layout: page
 title:  "Приветствие"
 categories: jekyll
-comments: true
+
 ---
 Этот сайт предназначается для программирования
 
