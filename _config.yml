@@ -30,10 +30,7 @@ header_pages:
   - topics/list.md
   - links/links.md
 
-comments:
-  provider: "staticman"
-  gravatarsize: 100
-staticmanUrl: "https://api.staticman.net/v2/entry/DeXP/dexp.github.io/master/comments"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
