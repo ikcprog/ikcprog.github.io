@@ -3,6 +3,7 @@ layout: page
 title: Ссылки
 permalink: links/
 ---
-[Timus Online Judge](http://acm.timus.ru) Архив задач по программированию с системой онлайн-проверки решений.
+## Архивы задач по программированию с системой онлайн-проверки решений
+[Timus Online Judge](http://acm.timus.ru) 
 
 [acmp.ru](https://acmp.ru)
