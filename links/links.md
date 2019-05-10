@@ -12,3 +12,8 @@ permalink: links/
 [acmp.ru](https://acmp.ru)
 
 [Codeforces](https://codeforces.com)
+
+## Больше об алгоритмах
+[Algolist](http://algolist.manual.ru)
+
+[e-maxx](http://www.e-maxx-ru.1gb.ru)
