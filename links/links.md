@@ -22,3 +22,5 @@ permalink: links/
 [Уральские олимпиады](http://acm.urfu.ru) - актуальная информация по близжайшим олимпиадам
 
 Паблик ВК [здесь](https://vk.com/icpc_urfu_school)
+
+[Питонтьютор](https://pythontutor.ru)
