@@ -17,3 +17,7 @@ permalink: links/
 [Algolist](http://algolist.manual.ru)
 
 [e-maxx](http://www.e-maxx-ru.1gb.ru)
+
+## Другие полезные ссылки
+[Уральские олимпиады](http://acm.urfu.ru) - актуальная информация по близжайшим олимпиадам
+Паблик ВК [здесь](https://vk.com/icpc_urfu_school)
