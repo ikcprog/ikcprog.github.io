@@ -2,7 +2,7 @@
 layout: page
 title:  "Приветствие"
 categories: jekyll
-
+commenting: open
 ---
 
 Привет! 
