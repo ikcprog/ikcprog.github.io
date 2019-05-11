@@ -9,7 +9,6 @@ commenting: open
 Сайт работает, с чем мы вас и поздравляем.
 
 {% highlight cpp linenos %}
-
 #include <iostream>
 using namespace std;
 int main()
@@ -17,5 +16,4 @@ int main()
   cout<<"Hello, world!";
   return 0;
   }
-
 {% endhighlight %}
