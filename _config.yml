@@ -30,7 +30,10 @@ header_pages:
   - topics/list.md
   - links/links.md
 
+emptyArray: []
 
+comments:
+  receiver: https://https://ikcprog.github.io/api/PostComment}}
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
