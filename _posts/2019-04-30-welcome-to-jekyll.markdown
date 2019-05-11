@@ -8,7 +8,7 @@ commenting: open
 Привет! 
 Сайт работает, с чем мы вас и поздравляем.
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 
 #include <iostream>
 using namespace std;
