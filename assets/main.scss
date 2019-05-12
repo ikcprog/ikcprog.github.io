@@ -72,9 +72,9 @@ table.rouge-table {
   display: inline;
 }
 
-// Medal icons
-
-img.medal {
-  display: inline-block;
-  height: 1.4em;
+#logo {
+	margin: -65px 10px -30px -50px;
+	float:right;
+	background: url('/assets/logo_night.png');
+	height: 213px; width:204px;
 }
