@@ -4,4 +4,4 @@
 
 layout: home
 ---
-
+<img src='{{ "/assets/night_logo.png" | relative_url }}' class='medal' /> 
