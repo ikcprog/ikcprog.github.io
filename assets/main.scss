@@ -72,8 +72,6 @@ table.rouge-table {
 }
 
 #logo {
-	margin: 0px 10px 0px 0px;
-	float:none;
-	background: url('/assets/logo_night.png');
-	height: 75px; width:65px;
+  display: inline-block;
+  height: 1.4em;
 }
