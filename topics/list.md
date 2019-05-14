@@ -6,4 +6,4 @@ permalink: topics/
 
 ## Язык програмирования C++
 
-* [Знакомство с языком С++. IDE Vsual Studio]({{ "topics/intoduction" | relative_url }})
+* [Знакомство с языком С++. IDE Vsual Studio]({{ "topics/intoduction/" | relative_url }})
