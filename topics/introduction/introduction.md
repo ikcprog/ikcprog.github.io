@@ -14,7 +14,11 @@ permalink: topics/introduction/
 Рассмотрим задачу [1000 с Timus](http://acm.timus.ru/problem.aspx?space=1&num=1000)
 
 Условие: вычислить а+b
+
 Исходные данные: a,b
+
 Результат: a+b
+
 Пример:
+
 Исходные данные | Результат
