@@ -22,4 +22,5 @@ permalink: topics/introduction/
 Пример:
 
 Исходные данные | Результат
+
 1 5 | 6
