@@ -8,7 +8,7 @@ categories: jekyll
 Привет! 
 Сайт работает, с чем мы вас и поздравляем.
 
-{% highlight cpp linenos %}
+{% highlight cpp %}
 #include <iostream>
 using namespace std;
 int main()
@@ -18,5 +18,3 @@ int main()
   }
 {% endhighlight %}
 
-
-{% include disqus.html %}
