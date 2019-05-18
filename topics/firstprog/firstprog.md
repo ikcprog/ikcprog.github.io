@@ -52,6 +52,7 @@ return 0;
 {% endhighlight %}
 Подключает библиотеку математических функций.
  
+ 
 {% highlight cpp %}
 using namespace std;
 {% endhighlight %}
