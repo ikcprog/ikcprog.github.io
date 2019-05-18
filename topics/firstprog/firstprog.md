@@ -37,7 +37,12 @@ permalink: topics/firstprog/
 #include <iostream>
 using namespace std; 
 int main() { 
-cout<<"Hello, world!"; 
+cout<<"Hello, C++!"; 
 return 0; 
 } 
+{% endhighlight %}
+
+Рассмотрим программу по частям
+{% highlight cpp %}
+#include <iostream>
 {% endhighlight %}
