@@ -33,6 +33,11 @@ permalink: topics/firstprog/
 
 Рассмотрим самую простую программу:
 
-{%highlight cpp %}
+{% highlight cpp %}
 #include <iostream>
-{endhighlight}
+using namespace std; 
+int main() { 
+cout<<"Hello, world!"; 
+return 0; 
+} 
+{% endhighlight %}
