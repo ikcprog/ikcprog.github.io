@@ -39,11 +39,8 @@ permalink: topics/firstprog/
 using namespace std; 
 
 int main() { 
-
 cout << "Hello, C++!";
-
 system("pause");
-
 return 0; 
 } 
 {% endhighlight %}
