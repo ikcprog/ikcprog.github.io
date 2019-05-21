@@ -35,10 +35,15 @@ permalink: topics/firstprog/
 
 {% highlight cpp %}
 #include <iostream>
+ 
 using namespace std; 
+
 int main() { 
-cout<<"Hello, C++!";
+
+cout << "Hello, C++!";
+
 system("pause");
+
 return 0; 
 } 
 {% endhighlight %}
