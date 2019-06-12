@@ -13,7 +13,7 @@ categories: jekyll
 using namespace std;
 int main()
   {
-  cout<<"Hello, world!";
+  cout<<"Thanks for visiting!";
   return 0;
   }
 {% endhighlight %}
