@@ -93,6 +93,6 @@ return 0;
 
 {% highlight cpp %}
 cout << "Hi!" << endl;
-cout<< "Hi";
-cout<< "Hello!";
+cout << "Hi";
+cout << "Hello!";
 {% endhighlight %}
