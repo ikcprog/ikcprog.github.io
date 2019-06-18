@@ -15,7 +15,7 @@ permalink: topics/complexity analysis/
 int a[100], sum = 0;
 //заполняем массив
 for(int i = 0;i<n;i++)
-sum+=a[i];
+sum += a[i];
 cout<< sum <<endl;
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ int a[100][100], sum = 0;
 for(int i = 0;i<n;i++)
 {
 for(int j = 0;j<n;j++)
-sum+=a[i][j];
+sum += a[i][j];
 }
 cout<< sum <<endl;
 {% endhighlight %}
