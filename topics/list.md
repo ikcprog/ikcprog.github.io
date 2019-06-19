@@ -11,3 +11,4 @@ permalink: topics/
 
 ## Алгоритмы
 * [Асимптотический анализ сложности]({{ "topics/complexity analysis/" | relative_url }})
+* [Бинарный поиск]({{ "topics/binsearch/" | relative_url }})
