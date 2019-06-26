@@ -39,3 +39,21 @@ int binsearch(int arr[], int size, int val)
 	}
 }
 {% endhighlight %}
+
+
+В стандартной библиотеке C++ уже имеется 2 готовых алгоритма для бинарного поиска. Для того, чтобы их использовать нужно подключить заголовочный файл algorithm. Определения этих функций выгледят следующим образом:
+{% highlight cpp%}
+std::lower_bound(iterator begin, iterator end, int value);
+
+std::upper_bound(iterator begin, iterator end, int value);
+{% endhighlight %}
+lower_bound возвращает указатель на первый элемент, больший либо равный value. upper_bound возвращает указатель на элемент, строго больший value.
+
+Рассмотрим следующий код:
+{% highlight cpp%}
+        int a[20] = { 1,2,3,4,5,6,7,7,7,8,9,9,11,11,12,16,20,20,20,20 };
+	int* p = lower_bound(a, a + 20, 10);
+	int* f = upper_bound(a, a + 20, 15);
+	cout << *p << endl;
+	cout << *f << endl;
+{% endhighlight %}
