@@ -46,3 +46,6 @@ for (int i = 0; i < arr.size() - 1; i++) {
 }
 {% endhighlight %}
 <iframe width="738" height="538" src="https://www.youtube.com/embed/ROalU379l3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Сортировка слиянием
+Сортировка слиянием (Merge sort). Вычислительная сложность - $$O(n\log(n))$$
