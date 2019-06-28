@@ -9,22 +9,22 @@ permalink: topics/sort/
 Сортировка пузырьком (Bubble sort) проста в реализации, однако сложность данного алгоритма ставляет желать лучшего - $$O(n^2)$$. Поэтому, на практике данный алгоритм применяется редко, в качестве обучения.
 {% highlight cpp %}
 vector <int> arr;
-	int temp;
-	for (int i = 0; i < 10; i++)
-	{
-		cin >> temp;
-		arr.push_back(temp);
-	}
-	for (int i = 0; i < arr.size() - 1; i++)
-	{
-		for(int j = 0;j<arr.size() - 1; j++)
-			if (arr[j] > arr[j + 1])
-			{
-				temp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = temp;
-			}
-	}
-	for (int i = 0; i < arr.size(); i++)
-		cout << arr[i] << " ";
+int temp;
+for (int i = 0; i < 10; i++)
+{
+	cin >> temp;
+	arr.push_back(temp);
+}
+for (int i = 0; i < arr.size() - 1; i++)
+{
+	for(int j = 0;j<arr.size() - 1; j++)
+		if (arr[j] > arr[j + 1])
+		{
+			temp = arr[j];
+			arr[j] = arr[j + 1];
+			arr[j + 1] = temp;
+		}
+}
+for (int i = 0; i < arr.size(); i++)
+	cout << arr[i] << " ";
 {% endhighlight %}
