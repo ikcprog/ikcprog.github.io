@@ -50,3 +50,26 @@ for (int i = 0; i < arr.size() - 1; i++) {
 ## Сортировка слиянием
 Сортировка слиянием (Merge sort). Вычислительная сложность - $$O(n\log(n))$$. Реализуем рекурсивный способ данной сортировки.
 С этой целью, спроектируем две функции - sort и merge.
+Функция merge будет отвечать за объединение массивов в единный массив
+{% highlight cpp %}
+int middle, start, final, j;
+	int mas[100];
+	middle = (first + last) / 2; //вычисление среднего элемента
+	start = first; //начало левой части
+	final = middle + 1; //начало правой части
+	for (j = first; j <= last; j++) //выполнять от начала до конца
+		if ((start <= middle) && ((final > last) || (A[start] < A[final])))
+		{
+			mas[j] = A[start];
+			start++;
+		}
+		else
+		{
+			mas[j] = A[final];
+			final++;
+		}
+	//возвращение результата в список
+	for (j = first; j <= last; j++) 
+		A[j] = mas[j];
+};
+{% endhighlight %}
