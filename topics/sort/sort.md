@@ -31,3 +31,17 @@ for (int i = 0; i < arr.size(); i++)
 
 Чтобы понять, как работает данный алгоритм, предлагаю ознакомиться со следующим видеороликом:
 <iframe width="738" height="538" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Сортировка вставками
+Сортировка вставками (Insertion sort), вычислительная сложность - $$O(n^2)$$.
+{% highlight cpp %}
+for (int i = 0; i < arr.size() - 1; i++) {
+     for (int j = i + 1; j < arr.size(); j++) {
+		if (arr[i] > arr[j]) {
+			temp = arr[j];
+			arr[j] = arr[i];
+			arr[i] = temp;
+		}
+	}
+}
+{% endhighlight %}
