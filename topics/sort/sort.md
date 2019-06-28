@@ -30,4 +30,4 @@ for (int i = 0; i < arr.size(); i++)
 {% endhighlight %}
 
 Чтобы понять, как работает данный алгоритм, предлагаю ознакомиться со следующим видеороликом:
-<iframe width="538" height="538" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="738" height="538" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
