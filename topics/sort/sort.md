@@ -53,23 +53,38 @@ for (int i = 0; i < arr.size() - 1; i++) {
 Функция merge будет отвечать за объединение массивов в единный массив
 {% highlight cpp %}
 int middle, start, final, j;
-	int mas[100];
-	middle = (first + last) / 2; //вычисление среднего элемента
-	start = first; //начало левой части
-	final = middle + 1; //начало правой части
-	for (j = first; j <= last; j++) //выполнять от начала до конца
-		if ((start <= middle) && ((final > last) || (A[start] < A[final])))
+int mas[100];
+middle = (first + last) / 2; //вычисление среднего элемента
+start = first; //начало левой части
+final = middle + 1; //начало правой части
+for (j = first; j <= last; j++) //выполнять от начала до конца
+	if ((start <= middle) && ((final > last) || (A[start] < A[final])))
+	{
+		mas[j] = A[start];
+		start++;
+	}
+	else
+	{
+		mas[j] = A[final];
+		final++;
+	}
+//возвращение результата в список
+for (j = first; j <= last; j++) 
+	A[j] = mas[j];
+};
+{% endhighlight %}
+Функция sort отвечает непосредственно рекурсивную сортировку.
+{% highlight cpp %}
+void sort(int A[], int first, int last)
+{
+        int mid = (first + last) / 2;
+	{
+		if (first < last)
 		{
-			mas[j] = A[start];
-			start++;
+			sort(A, first, (first + last) / 2); //сортировка левой части
+			sort(A, (first + last) / 2 + 1, last); //сортировка правой части
+			merge(A, first, last); //слияние двух частей
 		}
-		else
-		{
-			mas[j] = A[final];
-			final++;
-		}
-	//возвращение результата в список
-	for (j = first; j <= last; j++) 
-		A[j] = mas[j];
+	}
 };
 {% endhighlight %}
