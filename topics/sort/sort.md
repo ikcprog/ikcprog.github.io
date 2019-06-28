@@ -49,8 +49,8 @@ for (int i = 0; i < arr.size() - 1; i++) {
 
 ## Сортировка слиянием
 Сортировка слиянием (Merge sort). Вычислительная сложность - $$O(n\log(n))$$. Реализуем рекурсивный способ данной сортировки.
-С этой целью, спроектируем две функции - sort и merge.
-Функция merge будет отвечать за объединение массивов в единный массив
+С этой целью, спроектируем две процедуры - sort и merge.
+Процедура merge будет отвечать за объединение массивов в единный массив
 {% highlight cpp %}
 int middle, start, final, j;
 int mas[100];
@@ -73,20 +73,27 @@ for (j = first; j <= last; j++)
 	A[j] = mas[j];
 };
 {% endhighlight %}
-Функция sort отвечает непосредственно рекурсивную сортировку.
+Процедура sort отвечает непосредственно рекурсивную сортировку.
 {% highlight cpp %}
 void sort(int A[], int first, int last)
 {
         int mid = (first + last) / 2;
 	{
-		if (first < last)
+	        if (first < last)
 		{
-			sort(A, first, (first + last) / 2); //сортировка левой части
-			sort(A, (first + last) / 2 + 1, last); //сортировка правой части
-			merge(A, first, last); //слияние двух частей
+		sort(A, first, (first + last) / 2); //сортировка левой части
+		sort(A, (first + last) / 2 + 1, last); //сортировка правой части
+		merge(A, first, last); //слияние двух частей
 		}
 	}
 };
 {% endhighlight %}
+
+Осталось лишь в главной функции вызвать процедуру sort:
+{% highlight cpp %}
+sort(A, 1, n);
+{% endhighlight %}
+
+Важное замечание: в функции main() мы нумеровали массив А начиная с 1.
 
 <iframe width="738" height="538" src="https://www.youtube.com/embed/XaqR3G_NVoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
