@@ -107,3 +107,33 @@ sort(A, 1, n);
 
 ## Быстрая сортировка
 Быстрая сортировка (quick sort), известная также как **сортировка Хоара**, - один из самых быстрых универальных алгоритмов сортировки, вычислительная сложность -  $$O(n\log(n))$$.
+
+{% highlight cpp %}
+void quicksort(int* arr, int first, int last)
+{
+	int mid, count;
+	int f = first; int l = last;
+	mid = arr[(f + l) / 2];//опорный элемент
+	do
+	{
+		while (arr[f] < mid) f++;
+		while (arr[l] > mid) l--;
+		if (f <= l)
+		{
+			count = arr[f];
+			arr[f] = arr[l];
+			arr[l] = count;
+			f++;
+			l--;
+		}
+	} while (f < l);
+	if (first < l)
+	{
+		quicksort(arr, first, l);
+	}
+	if (f < last) 
+	{ 
+       quicksort(arr, f, last); 
+	}
+}
+{% endhighlight %}
