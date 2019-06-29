@@ -138,4 +138,18 @@ if (f < last)
 }
 {% endhighlight %}
 
-<iframe width="956" height="538" src="https://www.youtube.com/embed/ywWBy6J5gz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="738" height="538" src="https://www.youtube.com/embed/ywWBy6J5gz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Стандартный алгоритм сортировки
+
+Чтобы каждый раз не реализовывать в своем проекте алгоритм сортировки, разработчики добавили в язык встроенный алгоритм сортировки. Для того, чтобы его использовать, нужно подключить библиотеку **algorithm**.
+Итак, в общем виде стандартный алгоритм сортировки выглядит так:
+{% highlight cpp %}
+sort(arr, arr + n);
+{% endhighlight %}
+Где arr(имя массива) является первым аргументом (началом диапазона сортировки), a n - колличество элементов в массиве (то есть arr + n - это конец диапазона сортировки). Также при необходимости мы можем использовать третий аргумент - **компаратор** - о нем мы поговорим далее.
+Если мы захотим отсртировать vector, мы будем использовать такие аргументы:
+{% highlight cpp %}
+sort(arr.begin(), arr.end());
+{% endhighlight %}
