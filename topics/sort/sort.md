@@ -34,6 +34,7 @@ for (int i = 0; i < arr.size(); i++)
 <iframe width="738" height="538" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+
 ## Сортировка вставками
 Сортировка вставками (Insertion sort), вычислительная сложность - $$O(n^2)$$.
 {% highlight cpp %}
@@ -48,6 +49,8 @@ for (int i = 0; i < arr.size() - 1; i++) {
 }
 {% endhighlight %}
 <iframe width="738" height="538" src="https://www.youtube.com/embed/ROalU379l3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ## Сортировка слиянием
 Сортировка слиянием (Merge sort). Вычислительная сложность - $$O(n\log(n))$$. Реализуем рекурсивный способ данной сортировки.
@@ -99,6 +102,7 @@ sort(A, 1, n);
 Важное замечание: в функции main() мы нумеровали массив А начиная с 1.
 
 <iframe width="738" height="538" src="https://www.youtube.com/embed/XaqR3G_NVoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 ## Быстрая сортировка
