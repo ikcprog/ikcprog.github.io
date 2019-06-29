@@ -13,3 +13,4 @@ permalink: topics/
 * [Асимптотический анализ сложности]({{ "topics/complexity analysis/" | relative_url }})
 * [Бинарный поиск]({{ "topics/binsearch/" | relative_url }})
 * [Сортировки]({{ "topics/sort/" | relative_url }})
+* [Алгоритм Евклида]({{ "topics/gcd/" | relative_url }})
