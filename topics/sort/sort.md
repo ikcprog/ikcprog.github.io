@@ -99,3 +99,7 @@ sort(A, 1, n);
 Важное замечание: в функции main() мы нумеровали массив А начиная с 1.
 
 <iframe width="738" height="538" src="https://www.youtube.com/embed/XaqR3G_NVoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Быстрая сортировка
+Быстрая сортировка (quick sort), известная также как **сортировка Хоара**, - один из самых быстрых универальных алгоритмов сортировки, вычислительная сложность -  $$O(n\log(n))$$.
