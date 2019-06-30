@@ -11,8 +11,8 @@ permalink: topics/sort/
 * Сортировка слиянием
 * Быстрая сортировка
 * Стандартный алгоритм сортировки
-* Стабильная сортировка
 * Компараторы
+* Стабильная сортировка
 
 
 ## Сортировка пузырьком
@@ -168,4 +168,63 @@ sort(arr.begin(), arr.end());
 
 Компаратор в C++ - логическая функция, которая принимает два объекта одинакового типа, и возвращает true, если первый из них “меньше” второго и false в противном случае. В этом контексте “меньше” значит, что в отсортированном массиве этот элемент обязательно должен стоять раньше.
 
+Рассмотрим постой пример: нам нужно купить автомобиль. Введем в рассмотрение такую величину как оценку комфорта по десятибальной шкале. Первое, на что мы должны ориентироваться, это комфорт, а далее уже цена.
 
+Для этого нам понадобится разработать структуру car:
+{% highlight cpp %}
+struct car
+{
+        string name;
+	int comfort;
+	int price;
+};
+{% endhighlight %}
+
+Далее напишем сам комраратор:
+{% highlight cpp %}
+bool comp(car a, car b)
+{
+	return a.comfort > b.comfort 
+		|| ((a.comfort == b.comfort) && a.price <  b.price);
+}
+{% endhighlight %}
+
+Теперь мы можем использовать компаратор как третий аргумент функции sort. Полный код решения:
+{% highlight cpp %}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+struct car
+{
+	string name;
+	int comfort;
+	int price;
+};
+
+bool comp(car a, car b)
+{
+	return a.comfort > b.comfort 
+		|| ((a.comfort == b.comfort) && a.price <  b.price);
+}
+
+int main()
+{
+	vector <car> cars{
+		{"Mersedes", 6,1000},
+		{"Toyota", 5,1500},
+		{"Hyundai", 4,1500},
+		{"Ford", 6,2000},
+		{"Volvo", 5,1000},
+	};
+
+	sort(cars.begin(), cars.end(), comp);
+	for (car a : cars) {
+		cout << a.name << endl;
+	}
+
+	return 0;
+}
+{% endhighlight %}
