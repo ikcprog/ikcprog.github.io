@@ -31,3 +31,11 @@ int gcd(int a, int b)
 return a;
 }
 {% endhighlight %}
+
+Рекурсивная реализация:
+{% highlight cpp %}
+int gcd(int a, int b)
+{
+	return (b == 0) ? abs(a) : gcd(b, a % b);
+}
+{% endhighlight %}
