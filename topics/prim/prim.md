@@ -11,6 +11,22 @@ $$ 2,3,5,7,11... $$
 
 Сам алгоритм достаточно тривиален: удем перебирать числа по возрастанию, начиная с 2, зачёркивая все числа, кратные текущему. Например, при обработке числа 2 будут зачёркнуты числа 4,6,8,…. Если мы обнаружили незачёркнутое число, это значит, что оно простое.
 
-
-
+{% highlight cpp %}
+const int n = 100;
+	vector <int> resheto;
+	vector <int> primes;
+	for (int i = 0; i < n + 1; i++)
+		resheto.push_back(i);
+	for (int i = 2; i < n + 1; i++)
+	{
+		if (resheto[i] != 0)
+		{
+			primes.push_back(resheto[i]);
+			for (int j = i * i; j < n +1; j += i)
+				resheto[j] = 0;
+		}
+	}
+	for (int i : primes)
+		cout << i << " ";
+{% endhighlight %}
 
