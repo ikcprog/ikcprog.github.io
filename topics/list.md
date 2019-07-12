@@ -15,3 +15,4 @@ permalink: topics/
 * [Сортировки]({{ "topics/sort/" | relative_url }})
 * [Алгоритм Евклида]({{ "topics/gcd/" | relative_url }})
 * [Решето Эратосфена]({{ "topics/prim/" | relative_url }})
+* [Элементы теории чисел]({{ "topics/theorynum/" | relative_url }})
