@@ -14,3 +14,4 @@ permalink: topics/
 * [Бинарный поиск]({{ "topics/binsearch/" | relative_url }})
 * [Сортировки]({{ "topics/sort/" | relative_url }})
 * [Алгоритм Евклида]({{ "topics/gcd/" | relative_url }})
+* [Решето Эратосфена]({{ "topics/prim/" | relative_url }})
