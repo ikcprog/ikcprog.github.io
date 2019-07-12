@@ -18,17 +18,18 @@ const int n = 100;
 vector <int> resheto;
 vector <int> primes;
 for (int i = 0; i < n + 1; i++)
-	resheto.push_back(i);
+	resheto.push_back(i);//заполняем решето
 for (int i = 2; i < n + 1; i++)
 {
 	if (resheto[i] != 0)
 	{
 		primes.push_back(resheto[i]);
 		for (int j = i * i; j < n +1; j += i)
-			resheto[j] = 0;
+			resheto[j] = 0;//кратные i обнуляем
 	}
 }
 for (int i : primes)
 	cout << i << " ";
 {% endhighlight %}
 
+Пусть n - это наше ограничение по поиску простых чисел, мы объявляем его заранее как константу. Также мы создаем 2 вектора - resheto, собственно где мы храним решето, и primes, куда мы будем заносить простые числа. Далее начинаем обход решета - если текущее значение отлично от 0, то число простое и мы заносим его в primes.
