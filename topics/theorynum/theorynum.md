@@ -38,15 +38,37 @@ int n = 24;
 vector <int> factors;
 for (int i = 2; i < sqrt(n); i++)
 {
-		while (n % i == 0)
+	while (n % i == 0)
+	{
+		factors.push_back(i);
+		n = n / i;
+	}
+}
+if (n != 1)
+	factors.push_back(n);
+for (auto i : factors)
+	cout << i << " ";
+return 0;
+{% endhighlight %}
+		 
+## Поиск делителей
+Еще одной часто встречающейся задачей в олимпиадном программировании является поиск делителей. Под делителями числа подразумевают все числа, на которые оно делится. Так, делители 24: 1,2,3,4,6,8,12,24.
+
+{% highlight cpp %}
+	int n = 24;
+	vector <int> deviders;
+	for (int i = 1; i <= sqrt(n); i++)
+	{
+		if (n % i == 0)
 		{
-			factors.push_back(i);
-			n = n / i;
+			deviders.push_back(i);
+			if (i * i != n)
+				deviders.push_back(n / i);
 		}
 	}
-	if (n != 1)
-		factors.push_back(n);
-	for (auto i : factors)
+	
+	for (auto i : deviders)
 		cout << i << " ";
 	return 0;
 	{% endhighlight %}
+	
