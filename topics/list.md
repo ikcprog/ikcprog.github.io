@@ -16,3 +16,4 @@ permalink: topics/
 * [Алгоритм Евклида]({{ "topics/gcd/" | relative_url }})
 * [Решето Эратосфена]({{ "topics/prim/" | relative_url }})
 * [Элементы теории чисел]({{ "topics/theorynum/" | relative_url }})
+* [Структуры данных]({{ "topics/datastruct/" | relative_url }})
