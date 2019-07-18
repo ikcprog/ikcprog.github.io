@@ -18,22 +18,22 @@ using namespace std;
 
 int main()
 {
-	int n,temp;
-	stack<int> s;
-	cin >> n;
-	for (int i = 0; i < n; i++)
-	{
-		cin >> temp;
-		s.push(temp);
-	}
-	if (s.empty())
-		cout << "Stack is empty" << endl;
-	else
-	{
-		cout << "The top element of stack is: " << s.top() << endl;
-		s.pop();
-		cout << "Now the top element of stack is: " << s.top() << endl;
-	}
-	return 0;
+int n,temp;
+stack<int> s;
+cin >> n;
+for (int i = 0; i < n; i++)
+{
+	cin >> temp;
+	s.push(temp);
+}
+if (s.empty())
+	cout << "Stack is empty" << endl;
+else
+{
+	cout << "The top element of stack is: " << s.top() << endl;
+	s.pop();
+	cout << "Now the top element of stack is: " << s.top() << endl;
+}
+return 0;
 }
 {% endhighlight %}
