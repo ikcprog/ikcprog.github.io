@@ -17,3 +17,4 @@ permalink: topics/
 * [Решето Эратосфена]({{ "topics/prim/" | relative_url }})
 * [Элементы теории чисел]({{ "topics/theorynum/" | relative_url }})
 * [Структуры данных]({{ "topics/datastruct/" | relative_url }})
+* [Понятие и представление графа]({{ "topics/graphintro/" | relative_url }})
