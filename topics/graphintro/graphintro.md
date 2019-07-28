@@ -38,29 +38,63 @@ permalink: topics/graphintro/
 
 {%highlight cpp %}
 bool graph[100][100] = { false };
-	int n;// количество ребер
-	int m;// количество вершин
-	cout << "enter a number of edges: ";
-	cin >> n;
-	cout << "enter a number of vertexes: ";
-	cin >> m;
-	for (int i = 1; i <= n; i++)
+int n;// количество ребер
+int m;// количество вершин
+cout << "enter a number of edges: ";
+cin >> n;
+cout << "enter a number of vertexes: ";
+cin >> m;
+for (int i = 1; i <= n; i++)
+{
+	int u, v;
+	сin >> u >> v;
+	graph[u][v] = graph[v][u] = true;// граф неориентированный - можем двигаться в обе стороны
+  }
+cout << "Matrix: " << endl;
+for (int i = 0; i < m; i++)
+{
+	for (int j = 0; j < m; j++)
 	{
-		int u, v;
-		cin >> u >> v;
-		graph[u][v] = graph[v][u] = true;// граф неориентированный - можем двигаться в обе стороны
-    }
-	cout << "Matrix: " << endl;
-	for (int i = 0; i < m; i++)
-	{
-		for (int j = 0; j < m; j++)
-		{
-			if (graph[i][j])
-				cout << "+" << " ";
-			else
-				cout << "." << " ";
-		}
-		cout << endl;
+		if (graph[i][j])
+			cout << "+" << " ";
+		else
+			cout << "." << " ";
 	}
-	return 0;
+	cout << endl;
+}
+return 0;
+{% endhighlight %}
+
+У матрицы смежности есть свои премимущества и недостатки. Мы можем проверить, существует ли ребро между двумя вершинами за $$0(1)$$. Очевидно, что матрица занимает $$N^2$$ памяти, что является непреемлимым для больших графов. В такой ситуации мы вынуждены искать более оптимальное решение.
+
+Второй способ представления графа - **список смежности**. Его идея заключается в хранении для каждой вершины расширяемого массива (вектора), содержащего всех её соседей.
+
+Теперь для каждой вершины будем выводить количество вершин, смежных с ней.
+{%highlight cpp %}
+vector <int> graph[100];
+int n, m;
+cout << "enter a number of edges: ";
+cin >> n;
+cout << "enter a number of vertexes: ";
+cin >> m;
+int c = 0;
+
+for (int i = 0; i < n; i++) {
+	int u, v;
+	cin >> u >> v;
+	u--, v--;// так как нумерация с нуля
+
+	graph[u].push_back(v);
+	graph[v].push_back(u);
+}
+
+for (int i = 0; i < m; i++) {
+	int c = 0;
+	for (int v : graph[i]) {    
+		c++;                    
+	}                           
+
+	cout << c << " edges adjacent to vertex " << i + 1 << endl;
+}
+
 {% endhighlight %}
