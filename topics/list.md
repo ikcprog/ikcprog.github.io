@@ -18,3 +18,4 @@ permalink: topics/
 * [Элементы теории чисел]({{ "topics/theorynum/" | relative_url }})
 * [Структуры данных]({{ "topics/datastruct/" | relative_url }})
 * [Понятие и представление графа]({{ "topics/graphintro/" | relative_url }})
+* [Поиск в ширину (BFS)]({{ "topics/bfs/" | relative_url }})
