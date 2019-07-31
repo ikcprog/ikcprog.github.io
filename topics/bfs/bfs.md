@@ -13,3 +13,34 @@ permalink: topics/bfs/
 ## Реализация
 Для реализации алгоритма нам потребуется очередь из вершин для посещения. При посещении очередной вершины в очередь добавляются все её соседи, которые ещё не были посещены и ещё не находятся в очереди. Для проверки, была ли вершина уже посещена, используется массив меток. Изначально $$visited[i] = false$$ для всех $$i$$, кроме начальной вершины. При добавлении вершины $$i$$ в очередь $$visited[i]$$ присваивается $$true$$.
 
+{% highlight cpp %}
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+bool used[1900];
+
+vector <vector<int>> graph(100);
+
+void bfs(int u)
+{
+	queue <int> q;
+	q.push(u);
+	used[u] = true;
+	while (!q.empty())
+	{
+		int current = q.front();
+		q.pop();
+		cout << current << endl;
+		for (auto neighbor : graph[current])
+		{
+			if (!used[neighbor])
+			{
+				q.push(neighbor);
+				used[neighbor] = true;
+			}
+		}
+	}
+}
+  {% endhighlight %}
