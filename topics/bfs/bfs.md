@@ -44,3 +44,27 @@ void bfs(int u)
 	}
 }
   {% endhighlight %}
+Мы создали функцию bfs с аргументом u - вершиной, с которой мы начинаем обходить граф. Теперь вызовем её в функции main:
+
+{% highlight cpp %}
+int main()
+{
+	cout << "Enter a number of edges: ";
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+	{
+		int u, v;
+		cin >> u >> v;
+		
+		graph[u].push_back(v);
+		graph[v].push_back(u);
+	}
+	for (int i = 1; i <= n; i++)
+	{
+		if (!used[i])
+			bfs(i);
+	}
+	return 0;
+}
+  {% endhighlight %}
