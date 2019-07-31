@@ -5,4 +5,4 @@ permalink: topics/bfs/
 ---
 Поиск в ширину (англ. breadth-first search, BFS) - метод обхода и поиска пути в графе.
 
-![<любое название>](Animated_BFS.gif)
+![любое название](Animated_BFS.gif)
