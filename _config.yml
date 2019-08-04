@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 💻 Школа Олимпиадного Программирования ИКЦ
+title: Школа Олимпиадного Программирования ИКЦ
 
 description: >- # this means to ignore newlines until "baseurl:"
   Здесь публикуются учебные материалы и новости
