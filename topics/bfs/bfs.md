@@ -14,20 +14,23 @@ permalink: topics/bfs/
 Для реализации алгоритма нам потребуется очередь из вершин для посещения. При посещении очередной вершины в очередь добавляются все её соседи, которые ещё не были посещены и ещё не находятся в очереди. Для проверки, была ли вершина уже посещена, используется массив меток. Изначально $$visited[i] = false$$ для всех $$i$$, кроме начальной вершины. При добавлении вершины $$i$$ в очередь $$visited[i]$$ присваивается $$true$$.
 
 {% highlight cpp %}
-#include <iostream>
-#include <queue>
+//INPUT
+	cout << "Enter a number of edges: ";
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+	{
+		int u, v;
+		cin >> u >> v;
 
-using namespace std;
+		graph[u].push_back(v);
+		graph[v].push_back(u);
+	}
 
-bool used[1900];
-
-vector <vector<int>> graph(100);
-
-void bfs(int u)
-{
+	//BFS
 	queue <int> q;
-	q.push(u);
-	used[u] = true;
+	q.push(1); // 1 - начальная вершина
+	used[1] = true;
 	while (!q.empty())
 	{
 		int current = q.front();
@@ -42,31 +45,7 @@ void bfs(int u)
 			}
 		}
 	}
-}
-  {% endhighlight %}
-Мы создали функцию bfs с аргументом u - вершиной, с которой мы начинаем обходить граф. Теперь вызовем её в функции main:
 
-{% highlight cpp %}
-int main()
-{
-	cout << "Enter a number of edges: ";
-	int n;
-	cin >> n;
-	for (int i = 1; i <= n; i++)
-	{
-		int u, v;
-		cin >> u >> v;
-		
-		graph[u].push_back(v);
-		graph[v].push_back(u);
-	}
-	for (int i = 1; i <= n; i++)
-	{
-		if (!used[i])
-			bfs(i);
-	}
-	return 0;
-}
-  {% endhighlight %}
+ {% endhighlight %}
 
-Теперь усложним задачу - нам нужно определить расстояние от заданной вершины до всех остальных. Для этого создадим массив distance, и обозначим расстояние от начальной вершины до вершины $$i$$ как $$dst[i]$$.
+Теперь усложним задачу - нам нужно определить расстояние от заданной вершины до всех остальных. Для этого создадим массив $$distance$$, и обозначим расстояние от начальной вершины до вершины $$i$$ как $$dst[i]$$.
