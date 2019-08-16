@@ -53,8 +53,9 @@ int main()
 		}
 	}
 	for (int i = 1; i <= m; i++) {
-		cout << "Vertex " << i << " belongs to component " << comp[i] << endl;
+		cout << "Vertex " << i << " belongs to component #" << comp[i] << endl;
 	}
 	return 0;
 }
 {%endhighlight%}
+Таким образом, мы можем узнать, что такая вершина пренадлежит такой-то компоненте связности.
