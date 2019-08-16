@@ -14,5 +14,47 @@ permalink: topics/component/
 
 Каждую компоненту связности будем нумеровать, для чего создадим массив компонент $$comp$$.
 
+{%highlight cpp%}
+bool used[100];
+vector <vector<int>> graph(100);
+int comp[100];
 
+void dfs(int vertex, int components)
+{
+	used[vertex] = true;
+	comp[vertex] = components;
+	for (auto u : graph[vertex])
+	{
+		if (!used[u])
+			dfs(u, components);
+	}
+}
 
+int main()
+{
+	int n,m;
+	int components = 1; // нумеруем компоненты с 1
+	cout << "Enter the number of edges: ";
+	cin >> n;
+	cout << "Enter the number of vertexes: ";
+	cin >> m;
+	for (int i = 0; i < n; i++)
+	{
+		int a, b;
+		cin >> a >> b;
+		graph[a].push_back(b);
+		graph[b].push_back(a);
+	}
+
+	for (int i = 1; i <= m; i++) {
+		if (!used[i]) {     //если мы ещё не посетили эту вершину, обходя одну из предыдущих
+			dfs(i, components);
+			components++;
+		}
+	}
+	for (int i = 1; i <= m; i++) {
+		cout << "Vertex " << i << " belongs to component " << comp[i] << endl;
+	}
+	return 0;
+}
+{%endhighlight%}
