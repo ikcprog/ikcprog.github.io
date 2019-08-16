@@ -20,4 +20,4 @@ permalink: topics/
 * [Понятие и представление графа]({{ "topics/graphintro/" | relative_url }})
 * [Поиск в ширину (BFS)]({{ "topics/bfs/" | relative_url }})
 * [Поиск в глубину (DFS)]({{ "topics/dfs/" | relative_url }})
-* [Компонента связности)]({{ "topics/component/" | relative_url }})
+* [Компонента связности]({{ "topics/component/" | relative_url }})
