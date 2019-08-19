@@ -22,3 +22,4 @@ permalink: topics/
 * [Поиск в глубину (DFS)]({{ "topics/dfs/" | relative_url }})
 * [Поиск компоненты связности]({{ "topics/component/" | relative_url }})
 * [Алгоритм Дейкстры]({{ "topics/deikstra/" | relative_url }})
+* [Алгоритм Дейкстры]({{ "topics/deikstrayeeah/" | relative_url }})
