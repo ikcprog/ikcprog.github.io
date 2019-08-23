@@ -9,4 +9,58 @@ permalink: topics/deikstra_/
 
 ## Реализация
 
+Для реализации алгоритма Дейкстры нам поторебуется два массива: один, логический, **visited**, для того, чтобы отмечать посещенные вершины; также нам потребуется численный **distance**, для хранения найденных кратчайших путей. Изначально все элементы массива **visited** обозначены как **false**. В каждый элемент массива **distance** мы запишем такое число, которое больше любого потенциально короткого пути. Для удобства будем называть такое число бесконечностью. Однако, это числе не является бесконечностью в прямом смысле этого слова, просто это очень большое число. В данном случае мы будем использовать **INT_MAX**. В качестве вершины, с которой мы начнем обход, будем использовать вершину **a**. Поэтому, **distance[a] = 0** (алгоритм не предусматривает петель).
+
 ## Алгоритм
+{% highlight cpp %}
+const int v = 6; // число вершин
+void Dijkstra(int graph[v][v], int start)
+{
+	
+	int distance[v],index;
+	bool visited[v];
+	for (int i = 0; i < v; i++)
+	{
+		distance[i] = INT_MAX;
+		visited[i] = false;
+	}
+	distance[start] = 0;
+	for (int i = 0; i < v-1; i++)
+	{
+		int min = INT_MAX;
+		for(int j = 0;j < v;j++)
+			if (!visited[j] && distance[j] < min)
+			{
+				min = distance[j];
+				index = j;
+			}
+		visited[index] = true;
+		for(int j = 0; j < v; j++)
+		if (!visited[j] && graph[index][j] && distance[index] != INT_MAX &&
+			distance[index] + graph[index][j] < distance[j])
+			distance[j] = distance[index] + graph[index][j];
+	}
+
+	for (int i = 0; i < v; i++) 
+		if (distance[i] != INT_MAX)
+		cout << start + 1 << " > " << i+1 << " = " << distance[i] << endl;
+	   else 
+		cout << start + 1 << " > " << i+1 << " = " << "not available" << endl;
+}
+{% endhighlight %}
+
+{% highlight cpp %}
+int graph[v][v] = {
+		{0, 18, 25, 0, 0, 0},
+		{18, 0, 0, 0, 0, 0},
+		{25, 0, 0, 5, 23, 30},
+		{0, 0, 5, 0, 0, 0},
+		{0, 0, 23, 0, 0, 10},
+		{0, 0, 30, 0, 10, 0},
+	};
+	int start;
+	cout << "Enter the start vertex: ";
+	cin >> start;
+	Dijkstra(graph, start-1);
+	return 0;
+  {% endhighlight %}
