@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Проверка графа на наличие циклов
-permalink: topics/cycles_/
+permalink: topics/cycles_
 ---
 Рассмотрим следующий ориентированный граф.
 ![<любое название>](цикл.png)
