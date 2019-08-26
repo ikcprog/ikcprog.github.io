@@ -12,3 +12,40 @@ permalink: topics/cycles/
 ## Алгоритм
 Для поиска будем исполшьзовать DFS. Рассмотрим дерево рекурсивных вызовов в нашем графе:
 ![<любое название>](граф.png)
+Как мы видим, существует восходящее (красное) ребро, по которому DFS не спускался. Данное ребро ведет в такого соседа, который не является прямым предком данной вершины. Таким образом, мы можем организовать проверку на наличие цикла (циклов).
+
+{% highlight cpp %}
+bool used[100];
+vector <vector<int>> graph(100);
+
+void dfs(int vertex, int parent = -1)// parent - предок текущей вершины
+{
+	used[vertex] = true;
+	for (auto neighbor : graph[vertex])
+	{
+		if (!used[neighbor])
+			dfs(neighbor,vertex);
+		else if(neighbor != parent)
+		{
+			cout << "Grath has a cycle!";
+			exit(0); // выйти из программы
+		}
+	}
+}
+
+int main()
+{
+	int n;
+	cout << "Enter the number of edges: ";
+	cin >> n;
+	for (int i = 0; i < n; i++)
+	{
+		int a, b;
+		cin >> a >> b;
+		graph[a].push_back(b);
+	}
+	dfs(1); // начинаем обход с первой вершины
+	cout << "graph has no cycles";// если мы принудительно не вышли из программы, значит в графе нет циклов
+	return 0;
+}
+{% endhighlight %}
