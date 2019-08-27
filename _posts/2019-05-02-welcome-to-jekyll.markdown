@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Приветствие на сайте"
+title:  "Приветствие"
 categories: jekyll
 
 ---
