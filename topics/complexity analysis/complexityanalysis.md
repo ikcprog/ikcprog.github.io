@@ -1,6 +1,6 @@
 ---
 layout: topic
-title: Асимптотический анализ сложности
+title: Сложность алгоритма
 permalink: topics/complexity analysis/
 ---
 
