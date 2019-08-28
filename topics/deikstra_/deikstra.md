@@ -50,6 +50,7 @@ void Dijkstra(int graph[v][v], int start)
 {% endhighlight %}
 
 {% highlight cpp %}
+int main() {
 int graph[v][v] = {
 		{0, 18, 25, 0, 0, 0},
 		{18, 0, 0, 0, 0, 0},
@@ -63,4 +64,5 @@ int graph[v][v] = {
 	cin >> start;
 	Dijkstra(graph, start-1);
 	return 0;
+	}
   {% endhighlight %}
