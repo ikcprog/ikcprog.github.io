@@ -76,3 +76,24 @@ cout << *it << endl;
 $$ 0.1e^x + \sin 5x = 0 $$
 Понятно, что аналитически данное уравнение решить не получится, поэтому прибегнем к численным методам. Возьмем точность $$10^-6$$. В качестве границ возьмем 0 и 1,5.
 
+{% highlight cpp%}
+double f(double x)
+{
+	return 0.1 * exp(x) + sin(5*x);
+}
+int main()
+{
+	double left = 0, right = 1.5;
+	while (right - left > 1.e-6)
+	{
+		double mid = (left + right) / 2.0;
+		if (f(left) * f(mid) <= 0)
+			right = mid;
+		else
+			left = mid;
+	}
+	cout.precision(5);
+	cout << std::fixed << (left + right) / 2;
+	return 0;
+}
+{% endhighlight %}
