@@ -23,14 +23,29 @@ int gcd(int a, int b)
 {
         while (a != b)
 	{
-	if (a > b)
-		a -= b;
-	else
-		b -= a;
+		if (a > b)
+			a -= b;
+		else
+			b -= a;
 	}
-return a;
+	return a;
 }
 {% endhighlight %}
+
+Однако данную реализацию можно ускорить, заметив, что вычитания нас приведут к остатку от деления:
+{% highlight cpp %}
+int gcd(int a, int b)
+{
+        while (b != 0)
+	{
+		a %= b;
+		swap(a, b);
+	}
+	return a;
+}
+{% endhighlight %}
+
+
 
 Рекурсивная реализация:
 {% highlight cpp %}
