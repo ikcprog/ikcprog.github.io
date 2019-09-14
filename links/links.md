@@ -9,7 +9,7 @@ permalink: links/
 ## Архивы задач по программированию с системой онлайн-проверки решений
 [Timus Online Judge](http://acm.timus.ru) 
 
-[acmp.ru](https://acmp.ru)
+[ACMP](https://acmp.ru)
 
 [Codeforces](https://codeforces.com)
 
@@ -17,6 +17,8 @@ permalink: links/
 [Algolist](http://algolist.manual.ru)
 
 [e-maxx](http://www.e-maxx-ru.1gb.ru)
+
+[IFMO Wiki](http://neerc.ifmo.ru/wiki/index.php)
 
 ## Другие полезные ссылки
 [Уральские олимпиады](http://acm.urfu.ru) - актуальная информация по ближайшим олимпиадам
