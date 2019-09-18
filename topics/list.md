@@ -9,7 +9,7 @@ permalink: topics/
 * [Введение]({{ "topics/introduction/" | relative_url }})
 * [Знакомство с IDE. Первая программа на С++]({{ "topics/firstprog/" | relative_url }})
 
-## Алгоритмы
+## Алгоритмы и Структуры данных
 * [Сложность алгоритма]({{ "topics/complexity analysis/" | relative_url }})
 * [Сортировки]({{ "topics/sort/" | relative_url }})
 * [Бинарный поиск]({{ "topics/binsearch/" | relative_url }})
