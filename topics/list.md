@@ -8,6 +8,16 @@ permalink: topics/
 
 * [Введение]({{ "topics/introduction/" | relative_url }})
 * [Знакомство с IDE. Первая программа на С++]({{ "topics/firstprog/" | relative_url }})
+* [Типы данных и арифметика]({{ "topics/f/" | relative_url }})
+* [Условные операторы]({{ "topics/f/" | relative_url }})
+* [Циклы]({{ "topics/f/" | relative_url }})
+* [Массивы]({{ "topics/f/" | relative_url }})
+* [Строки]({{ "topics/f/" | relative_url }})
+* [Функции и процедуры]({{ "topics/f/" | relative_url }})
+* [Итераторы и указатели]({{ "topics/f/" | relative_url }})
+* [Динамический массив vector]({{ "topics/f/" | relative_url }})
+* [Встроенные структуры данных, STL]({{ "topics/f/" | relative_url }})
+* [Структуры и классы]({{ "topics/f/" | relative_url }})
 
 ## Алгоритмы и Структуры данных
 * [Сложность алгоритма]({{ "topics/complexity analysis/" | relative_url }})
