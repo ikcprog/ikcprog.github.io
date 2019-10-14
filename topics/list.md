@@ -16,7 +16,7 @@ permalink: topics/
 * [Функции и процедуры]({{ "topics/f/" | relative_url }})
 * [Итераторы и указатели]({{ "topics/f/" | relative_url }})
 * [Динамический массив vector]({{ "topics/f/" | relative_url }})
-* [Встороенные структуры данных, STL]({{ "topics/data_structures/" | relative_url }})
+* [Встроенные структуры данных, STL]({{ "topics/data_structures/" | relative_url }})
 * [Структуры и классы]({{ "topics/f/" | relative_url }})
 
 ## Алгоритмы и Структуры данных
