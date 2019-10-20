@@ -8,7 +8,7 @@ permalink: topics/
 
 * [**Введение**]({{ "topics/introduction/" | relative_url }})
 * [**Знакомство с IDE. Первая программа на С++**]({{ "topics/firstprog/" | relative_url }})
-* [Типы данных и арифметика]({{ "topics/f/" | relative_url }})
+* [Типы данных и арифметика]({{ "topics/data_types/" | relative_url }})
 * [Условные операторы]({{ "topics/f/" | relative_url }})
 * [Циклы]({{ "topics/f/" | relative_url }})
 * [Массивы]({{ "topics/f/" | relative_url }})
