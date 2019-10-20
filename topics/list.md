@@ -6,7 +6,7 @@ permalink: topics/
 
 ## Язык програмирования C++
 
-* [Введение]({{ "topics/introduction/" | relative_url }})
+* [**Введение**]({{ "topics/introduction/" | relative_url }})
 * [Знакомство с IDE. Первая программа на С++]({{ "topics/firstprog/" | relative_url }})
 * [Типы данных и арифметика]({{ "topics/f/" | relative_url }})
 * [Условные операторы]({{ "topics/f/" | relative_url }})
