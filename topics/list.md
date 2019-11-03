@@ -11,7 +11,7 @@ permalink: topics/
 * [**Типы данных и арифметика**]({{ "topics/data_types/" | relative_url }})
 * [Условные операторы]({{ "topics/f/" | relative_url }})
 * [Циклы]({{ "topics/f/" | relative_url }})
-* [Массивы]({{ "topics/f/" | relative_url }})
+* [Массивы]({{ "topics/array/" | relative_url }})
 * [Строки]({{ "topics/f/" | relative_url }})
 * [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
 * [Функции и процедуры]({{ "topics/f/" | relative_url }})
