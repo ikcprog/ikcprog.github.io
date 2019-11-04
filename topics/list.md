@@ -12,13 +12,13 @@ permalink: topics/
 * [Условные операторы]({{ "topics/f/" | relative_url }})
 * [Циклы]({{ "topics/f/" | relative_url }})
 * [**Массивы**]({{ "topics/array/" | relative_url }})
-* [**Строки**]({{ "topics/string/" | relative_url }})
-* [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
-* [Функции и процедуры]({{ "topics/f/" | relative_url }})
 * [Итераторы и указатели]({{ "topics/f/" | relative_url }})
+* [Функции и процедуры]({{ "topics/f/" | relative_url }})
+* [Структуры и классы]({{ "topics/f/" | relative_url }})
+* [**Строки**]({{ "topics/string/" | relative_url }})
 * [Динамический массив vector]({{ "topics/f/" | relative_url }})
 * [Встроенные структуры данных, STL]({{ "topics/data_structures/" | relative_url }})
-* [Структуры и классы]({{ "topics/f/" | relative_url }})
+* [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
 
 
 ## Алгоритмы и Структуры данных
