@@ -12,7 +12,7 @@ permalink: topics/
 * [Условные операторы]({{ "topics/f/" | relative_url }})
 * [Циклы]({{ "topics/f/" | relative_url }})
 * [**Массивы**]({{ "topics/array/" | relative_url }})
-* [Строки]({{ "topics/f/" | relative_url }})
+* [**Строки**]({{ "topics/string/" | relative_url }})
 * [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
 * [Функции и процедуры]({{ "topics/f/" | relative_url }})
 * [Итераторы и указатели]({{ "topics/f/" | relative_url }})
