@@ -42,7 +42,44 @@ permalink: topics/string/
  
  Этот код выведет третий символ строки s.
  
-## Методы
+## Методы string
  
  **s.size() / s.lenght()**
- Возвращает длину строки s.
+ Возвращает длину строки s. В следующем коде мы циклом идем по строке и выводим каждый символ.
+{% highlight cpp %}
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string s;
+	cin >> s;
+	for (int i = 0; i < s.size(); i++)
+	{
+		cout << s[i];
+	}
+	return 0;
+}
+{% endhighlight %}
+
+**s.append(s1)**
+Данная функция добавляет строку s1 в конец строки s.
+{% highlight cpp %}
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string s = "a";
+	string s1 = "b";
+	s.append(s1); // идентично s += s1
+	cout << s << endl; 
+	cout << s + s1 << endl;
+	return 0;
+}
+{% endhighlight %}
+{% endhighlight %}
