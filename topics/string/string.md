@@ -43,5 +43,6 @@ permalink: topics/string/
  Этот код выведет третий символ строки s.
  
  ## Методы string
+ 
  **s.size() / s.lenght()**
  Возвращает длину строки s.
