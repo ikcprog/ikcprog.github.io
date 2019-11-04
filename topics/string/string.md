@@ -82,3 +82,28 @@ int main()
 	return 0;
 }
 {% endhighlight %}
+
+* **s.erase()**
+Данная функция имеет несколько перегрузок:
+ * **s.erase(pos,n)** удаляет n символов начиная с позиции pos
+ * **s.erase(iterator)** iterator - это итератор, указывающий на символ. В результате применения функции этот символ будет удален.
+ * **s.erase(it begin, it end)** it begin, it end - итераторы, указывающие на начало и конец удаляемой последовательности. 
+  
+{% highlight cpp %}
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string s = "abcdef";
+	s.erase(1,2); // adef
+	string str = "abcdef";
+	str.erase(str.begin()); // bcdef
+	string sp = "abcdef";
+	sp.erase(sp.begin() + 1, sp.end()); // a
+}
+{% endhighlight %}
+
+В данном коде показаны преобразования строки, сделанные erase().
