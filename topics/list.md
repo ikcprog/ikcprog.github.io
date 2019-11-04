@@ -4,7 +4,7 @@ title: Список тем
 permalink: topics/
 ---
 
-## Язык програмирования C++
+## Язык программирования C++
 
 * [**Введение**]({{ "topics/introduction/" | relative_url }})
 * [**Знакомство с IDE. Первая программа на С++**]({{ "topics/firstprog/" | relative_url }})
