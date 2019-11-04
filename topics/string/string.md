@@ -8,7 +8,7 @@ permalink: topics/string/
 Чтобы пользоваться строками, необходимо подключить заголовочный файл <string>:
  {% highlight cpp %}
   #include <string>
-  {% endhighlight %}
+ {% endhighlight %}
 
 Объявление строк схоже с объявлением переменной.
  {% highlight cpp %}
@@ -18,9 +18,30 @@ permalink: topics/string/
   
   int main()
   {
-  string s;
-  s = "Hello!";
-  cout << s << endl;
-  return 0;
+   string s;
+   s = "Hello!";
+   cout << s << endl;
+   return 0;
   }
-  {% endhighlight %}
+ {% endhighlight %}
+
+Строка также представляет собой массив символов. Значит, чтобы получить конкретный символ, можно использовать следующее:
+ {% highlight cpp %}
+  #include <string>
+  
+  using namespace std;
+  
+  int main()
+  {
+   string s;
+   s = "Hello!";
+   cout << s[2] << endl;
+   return 0;
+  }
+ {% endhighlight %}
+ 
+ Этот код выведет третий символ строки s.
+ 
+ ## Методы string
+ **s.size() / s.lenght()**
+ Возвращает длину строки s.
