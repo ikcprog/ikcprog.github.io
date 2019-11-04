@@ -44,7 +44,7 @@ permalink: topics/string/
  
 ## Методы string
  
- **s.size() / s.lenght()**
+* **s.size() / s.lenght()**
  Возвращает длину строки s. В следующем коде мы циклом идем по строке и выводим каждый символ.
 {% highlight cpp %}
 #include <iostream>
@@ -64,7 +64,7 @@ int main()
 }
 {% endhighlight %}
 
-**s.append(s1)**
+* **s.append(s1)**
 Данная функция добавляет строку s1 в конец строки s.
 {% highlight cpp %}
 #include <iostream>
