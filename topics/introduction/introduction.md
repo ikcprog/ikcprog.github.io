@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Введение
-permalink: topics/introductio/
+permalink: topics/introduction/
 ---
 ## Для чего был создан данный ресурс?
 
