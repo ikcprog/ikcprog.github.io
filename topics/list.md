@@ -36,6 +36,7 @@ permalink: topics/
 * [**Алгоритм Дейкстры**]({{ "topics/deikstra_/" | relative_url }})
 * [**Проверка графа на наличие циклов**]({{ "topics/cycles/" | relative_url }})
 * [Бинарное дерево]({{ "topics/f/" | relative_url }})
+* [SQRT Decompose]({{ "topics/f/" | relative_url }})
 * [Система непересекающихся множеств]({{ "topics/f/" | relative_url }})
 * [Минимальное островное дерево]({{ "topics/f/" | relative_url }})
 * [Префиксные суммы]({{ "topics/f/" | relative_url }})
