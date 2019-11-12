@@ -74,3 +74,24 @@ int main()
 {% endhighlight %}
 
 Данный код возвел 13 в квадрат.
+
+Также можем придумать что-то интересное:
+{% highlight cpp %}
+bool is_zero(int n)
+{
+	if (n == 0)
+		return true;
+	else
+		return false;
+}
+{% endhighlight %}
+
+## Аргументы функции
+В качестве аргумента мы можем использовать значение по умолчанию:
+{% highlight cpp %}
+int div2(int d, int n = 2)
+{
+	return d / n;
+}
+{% endhighlight %}
+Данная функция производит целочисленное деление на 2.
