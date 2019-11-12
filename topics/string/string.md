@@ -12,6 +12,7 @@ permalink: topics/string/
 
 Объявление строк схоже с объявлением переменной.
 {% highlight cpp %}
+  #include <iostream>	
   #include <string>
   
   using namespace std;
@@ -27,6 +28,7 @@ permalink: topics/string/
 
 Строка также представляет собой массив символов. Значит, чтобы получить конкретный символ, можно использовать следующее:
 {% highlight cpp %}
+  #include <iostream>
   #include <string>
   
   using namespace std;
