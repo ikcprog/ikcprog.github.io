@@ -89,9 +89,10 @@ bool is_zero(int n)
 ## Аргументы функции
 В качестве аргумента мы можем использовать значение по умолчанию:
 {% highlight cpp %}
-int div2(int d, int n = 2)
+long double energy(long double m, long double c = 10e+8)
 {
-	return d / n;
+	return m * c * c;
 }
 {% endhighlight %}
-Данная функция производит целочисленное деление на 2.
+Данная функция вычисляет энергию по известному закону: $$ E = mc^2 $$.
+.
