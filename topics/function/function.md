@@ -15,3 +15,42 @@ permalink: topics/function/
  }
 {% endhighlight %}
  
+## Процедуры
+Процедуры в языке C++ имеют тип **void**. Создадим процедуру, печатающую приветствие:
+{% highlight cpp %}
+void hello()
+{
+	cout << "Hello!";
+}
+{% endhighlight %}
+
+Вызываем данную процедуру в главной функции main:
+{% highlight cpp %}
+int main()
+{
+	hello();
+	return 0;
+}
+{% endhighlight %}
+
+Теперь создадим процедуру, которая будет печатать приветствие заданное число раз.
+{% highlight cpp %}
+void hello(int n)
+{
+	for (int i = 0; i < n; i++)
+		cout << "Hello!" << endl;
+}
+{% endhighlight %}
+n - аргумент данной процедуры.
+
+В функции main вызываем процедуру и указываем в скобках параметры:
+{% highlight cpp %}
+int main()
+{
+	hello(5);
+	return 0;
+}
+{% endhighlight %}
+Таким образом, процедура hello печатает приветствии на экран 5 раз.
+
+## Функции
