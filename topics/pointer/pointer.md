@@ -19,4 +19,4 @@ cout << &n;
 	cout << &variable << endl; // адрес variable
 	cout << ptr << endl; // значение ptr (= адрес variable)
 	cout << &ptr << endl; // адрес ptr
-{% endhighlight %}
+{% endhighlight %} 
