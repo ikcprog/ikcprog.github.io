@@ -12,11 +12,11 @@ cout << &n;
 
 Данный код вывел шестнадцатиричное число. Это и есть адрес переменной n в памяти. Для инициализации указателя используют символ $$*$$.
 {% highlight cpp %}
-  int variable = 100;
-	int* ptr; // объявление указателя
-	ptr = &variable;
-	cout << *ptr << endl; // разыменование
-	cout << &variable << endl; // адрес variable
-	cout << ptr << endl; // значение ptr (= адрес variable)
-	cout << &ptr << endl; // адрес ptr
+ int variable = 100;
+int* ptr; // объявление указателя
+ptr = &variable;
+cout << *ptr << endl; // разыменование
+cout << &variable << endl; // адрес variable
+cout << ptr << endl; // значение ptr (= адрес variable)
+cout << &ptr << endl; // адрес ptr
 {% endhighlight %} 
