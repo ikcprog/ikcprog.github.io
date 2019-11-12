@@ -14,3 +14,4 @@ permalink: topics/function/
   <тело функции>
  }
 {% endhighlight %}
+ 
