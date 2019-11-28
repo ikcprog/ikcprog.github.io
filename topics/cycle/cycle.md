@@ -24,11 +24,6 @@ for(int i = 0; i < 10; i++)
 Данный код пробегается по i от 0 до 10 и выводит каждое i.
 
 {% highlight cpp %}
-for()
-  cout << i << " ";
-{% endhighlight %}
-
-{% highlight cpp %}
 #include <iostream>
 #include <Windows.h>
 
@@ -52,7 +47,7 @@ int main()
 {% highlight cpp %}
 for (int i = 5; i >= 0; i--)
 	{
-    int d = 5 / i;
+    		int d = 5 / i;
 		cout << d << endl;
 	}
 {% endhighlight %}
