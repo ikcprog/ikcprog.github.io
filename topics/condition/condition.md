@@ -64,7 +64,7 @@ cout << "You are welcome;)";
 	}
 	case 3: 
 	{
-		cout << "Immediate";
+		cout << "Intermediate";
 		break;
 	}
 	case 4:
