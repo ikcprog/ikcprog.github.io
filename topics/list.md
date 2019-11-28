@@ -6,11 +6,11 @@ permalink: topics/
 
 ## Язык программирования C++
 
-* [ **Введение**]({{ "topics/introduction/" | relative_url }})
+* [**Введение**]({{ "topics/introduction/" | relative_url }})
 * [**Знакомство с IDE. Первая программа на С++**]({{ "topics/firstprog/" | relative_url }})
 * [**Типы данных и арифметика**]({{ "topics/data_types/" | relative_url }})
-* [Условные операторы]({{ "topics/f/" | relative_url }})
-* [Циклы]({{ "topics/f/" | relative_url }})
+* [**Условные операторы**]({{ "topics/conditions/" | relative_url }})
+* [**Циклы**]({{ "topics/conditions/" | relative_url }})
 * [**Массивы**]({{ "topics/array/" | relative_url }})
 * [**Итераторы и указатели**]({{ "topics/pointer/" | relative_url }})
 * [**Функции и процедуры**]({{ "topics/function/" | relative_url }})
