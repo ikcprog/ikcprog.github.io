@@ -10,7 +10,7 @@ permalink: topics/
 * [**Знакомство с IDE. Первая программа на С++**]({{ "topics/firstprog/" | relative_url }})
 * [**Типы данных и арифметика**]({{ "topics/data_types/" | relative_url }})
 * [**Условные операторы**]({{ "topics/condition/" | relative_url }})
-* [**Циклы**]({{ "topics/condition/" | relative_url }})
+* [**Циклы и отладка**]({{ "topics/cycle/" | relative_url }})
 * [**Массивы**]({{ "topics/array/" | relative_url }})
 * [**Итераторы и указатели**]({{ "topics/pointer/" | relative_url }})
 * [**Функции и процедуры**]({{ "topics/function/" | relative_url }})
