@@ -66,3 +66,65 @@ if (vec.empty()) // вектор пустой?
 }
 cout << vec.size(); // вывод размера
 {% endhighlight %}
+
+Также можем заполнить вектор в цикле:
+
+{% highlight cpp %}
+vector<int> vec;
+int size;
+cin >> size;
+for (int i = 0; i < size; i++)
+{
+	int temp;
+	cin >> temp;
+	vec.push_back(temp);
+}
+{% endhighlight %}
+	
+Некоторое время назад мы говорили об итераторах. Напомним, что итератор - такая вещь, предоставляющая доступ к элементам коллекции(вектору в данном случае). Итераторы создаются при помощи таких стандартных методов как begin() и end(). Функция begin() возвращает указатель на первый элемент, а end() — на воображаемый несуществующий элемент, следующий за последним.
+
+Пример: мы ввели число элементов последовательности и саму последовательность. Нужно найти её сумму.
+
+{% highlight cpp %}
+long long size, sum = 0;
+vector<long long> vec;
+vector<long long>::iterator iter; // объявляем итератор
+cin >> size;
+for (long long i = 0; i < size; i++)
+{
+	int temp;
+	cin >> temp;
+	vec.push_back(temp);
+}
+for (iter = vec.begin(); iter != vec.end(); iter++) // итерируемся
+{
+	sum += *iter; // * - операция разыменования
+}
+cout << sum;
+{% endhighlight %}
+
+## Цикл for, основанный на диапазоне
+
+На самом деле, код написанный нами выше, можно переписать в более удобночитаемый. Это можно достигнуть при помощи for - each.
+
+{% highlight cpp %}
+long long size, sum = 0;
+vector<long long> vec;
+	
+cin >> size;
+for (long long i = 0; i < size; i++)
+{
+	int temp;
+	cin >> temp;
+	vec.push_back(temp);
+}
+	
+for (auto x : vec) // цикл for на диапазоне
+{
+	sum += x;
+}
+
+cout << sum;
+{% endhighlight %}
+
+Как вы видите, в приведенном коде мы не соприкоснулись с указателями(на первый взгляд). Однако то, что мы написали выше (vector<long long>::iterator iter) как раз спрятано в auto. Вообще говоря, **auto** - это автоматическое выведение типа из инициализации. Таким образом, мы прошлись по всему вектору и посчитали его сумму.
