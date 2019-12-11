@@ -17,7 +17,7 @@ permalink: topics/
 * [**Структуры и классы (Введение в ООП)**]({{ "topics/struct/" | relative_url }})
 * [**Строки**]({{ "topics/string/" | relative_url }})
 * [**Динамический массив vector**]({{ "topics/vector/" | relative_url }})
-* [Встроенные структуры данных, STL]({{ "topics/data_structures/" | relative_url }})
+* [Встроенные структуры данных]({{ "topics/data_structures/" | relative_url }})
 * [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
 
 
