@@ -14,9 +14,9 @@ permalink: topics/
 * [**Массивы**]({{ "topics/array/" | relative_url }})
 * [**Итераторы и указатели**]({{ "topics/pointer/" | relative_url }})
 * [**Функции и процедуры**]({{ "topics/function/" | relative_url }})
-* [**Структуры и классы**]({{ "topics/struct/" | relative_url }})
+* [**Структуры и классы (Введение в ООП)**]({{ "topics/struct/" | relative_url }})
 * [**Строки**]({{ "topics/string/" | relative_url }})
-* [Динамический массив vector]({{ "topics/f/" | relative_url }})
+* [**Динамический массив vector**]({{ "topics/vector/" | relative_url }})
 * [Встроенные структуры данных, STL]({{ "topics/data_structures/" | relative_url }})
 * [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
 
