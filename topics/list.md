@@ -18,7 +18,7 @@ permalink: topics/
 * [**Строки**]({{ "topics/string/" | relative_url }})
 * [**Динамический массив vector**]({{ "topics/vector/" | relative_url }})
 * [**Встроенные структуры данных**]({{ "topics/data_structures/" | relative_url }})
-* [Файловый ввод - вывод]({{ "topics/f/" | relative_url }})
+* [**Файловый ввод - вывод**]({{ "topics/file_inoutput/" | relative_url }})
 
 
 ## Алгоритмы и Структуры данных
@@ -32,7 +32,6 @@ permalink: topics/
 * [**Понятие и представление графа**]({{ "topics/graphintro/" | relative_url }})
 * [**Поиск в ширину (BFS)**]({{ "topics/bfs/" | relative_url }})
 * [**Поиск в глубину (DFS)**]({{ "topics/dfs/" | relative_url }})
-* [Топологическая сортировка]({{ "topics/f/" | relative_url }})
 * [**Поиск компоненты связности**]({{ "topics/component/" | relative_url }})
 * [**Алгоритм Дейкстры**]({{ "topics/deikstra_/" | relative_url }})
 * [**Проверка графа на наличие циклов**]({{ "topics/cycles/" | relative_url }})
