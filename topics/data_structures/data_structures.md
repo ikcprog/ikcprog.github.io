@@ -75,3 +75,4 @@ for (auto x : people)
 	cout << x.first << " - " << x.second << endl;	
 {% endhighlight %}
 
+Все указанные в таблице методы так же относятся и к map.
