@@ -27,3 +27,22 @@ set<int> s;
 | insert(...) |Добавить элемент в set|
 | find(...) | Возвращает итератор на найденный элемент, иначе вернет итератор end |
 | erase(n) | Удаляет элемент, равный n |
+
+Ниже в коде приведен пример использования этих методов:
+
+{% highlight cpp %}
+set<int> s;
+s.insert(1);
+s.insert(5);
+if (s.find(1) != s.end())
+	cout << "1 was founded" << endl;
+else
+	cout << "1 was not founded" << endl;
+if (s.find(7) != s.end())
+	cout << "7 was founded" << endl;
+else
+	cout << "7 was not founded" << endl;
+s.erase(2);
+for (auto x : s)
+	cout << x << " ";
+{% endhighlight %}
