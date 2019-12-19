@@ -12,34 +12,34 @@ permalink: topics/string/
 
 Объявление строк схоже с объявлением переменной.
 {% highlight cpp %}
-  #include <iostream>	
-  #include <string>
+#include <iostream>	
+#include <string>
   
-  using namespace std;
+using namespace std;
   
-  int main()
-  {
-   string s;
-   s = "Hello!";
-   cout << s << endl;
-   return 0;
-  }
+int main()
+{
+ string s;
+ s = "Hello!";
+ cout << s << endl;
+ return 0;
+}
 {% endhighlight %}
 
 Строка также представляет собой массив символов. Значит, чтобы получить конкретный символ, можно использовать следующее:
 {% highlight cpp %}
-  #include <iostream>
-  #include <string>
+#include <iostream>
+#include <string>
   
-  using namespace std;
+using namespace std;
   
-  int main()
-  {
-   string s;
-   s = "Hello!";
-   cout << s[2] << endl;
-   return 0;
-  }
+int main()
+{
+ string s;
+ s = "Hello!";
+ cout << s[2] << endl;
+ return 0;
+}
 {% endhighlight %}
  
 Этот код выведет третий символ строки s.
@@ -120,6 +120,31 @@ int main()
 
 * **s.substr(pos,n)**
 Возвращает подстроку из n символов начиная с позиции pos.
+
+* **Перевод строки в число и наоборот** 
+Когда возникает потребность перевести число в строку, может пригодиться функция stoi:
+{% highlight cpp %}
+string s;
+cin >> s;
+int n = stoi(s);
+cout << n;
+{% endhighlight %}
+
+Если же нам нужно перевести число в строку, воспульзуемся функцией to_string:
+{% highlight cpp %}
+int n;
+cin >> n;
+string s = to_string(n);
+cout << s;
+{% endhighlight %}
+
+* reverse (из <algorithm>)
+Данный метод позволяет развернуть строку задом наперед:
+{% highlight cpp %}
+string s = "wiealtbistdu";
+reverse(s.begin(), s.end());
+cout << s;
+{% endhighlight %}
 
 ## Решение задачи : проверка на палиндромность
 Создадим логическую функцию, с помощью которой будем определять, является ли строка палиндромом. Напомним, что палиндром - строка, которая читается одинаково с начала и с конца. Например, abba - палиндром.
