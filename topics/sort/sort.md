@@ -87,6 +87,7 @@ for (j = first; j <= last; j++)
 	A[j] = mas[j];
 };
 {% endhighlight %}
+
 Процедура sort отвечает непосредственно рекурсивную сортировку.
 {% highlight cpp %}
 void sort(int A[], int first, int last)
