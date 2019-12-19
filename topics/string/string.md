@@ -136,7 +136,7 @@ string s = to_string(n);
 cout << s;
 {% endhighlight %}
 
-* reverse (из <algorithm>)
+* reverse (из algorithm)
 Данный метод позволяет развернуть строку задом наперед:
 {% highlight cpp %}
 string s = "wiealtbistdu";
