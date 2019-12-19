@@ -80,7 +80,7 @@ cin >> m;
 int c = 0;
 
 for (int i = 0; i < n; i++) {
-	int u, v;
+	int u, v; 
 	cin >> u >> v;
 	u--, v--;// так как нумерация с нуля
 
