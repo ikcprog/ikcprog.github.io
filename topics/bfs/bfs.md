@@ -49,47 +49,47 @@ permalink: topics/bfs/
 
 Теперь усложним задачу - нам нужно определить расстояние от первой вершины до всех остальных. Для этого создадим массив $$distance$$. Данный массив нужен нам для хранения расстояния от первой вершины до всех остальных. Следует, что расстояние от вершины 1 до $$i$$ хранится в $$distance[i]$$. При посещении очередного соседа вершины $$current$$ мы просто увеличим значение $$distance[current]$$ на единицу.
 {% highlight cpp %}
- int distance[100];
-	for (int i = 0; i <= 99; i++)
-		distance[i] = -1;
-	distance[1] = 0;
-	//INPUT
-	cout << "Enter a number of edges: ";
-	int n;
-	cin >> n;
-	for (int i = 0; i < n; i++)
-	{
-		int u, v;
-		cin >> u >> v;
-		graph[u].push_back(v);
-		graph[v].push_back(u);
-	}
+int distance[100];
+for (int i = 0; i <= 99; i++)
+	distance[i] = -1;
+distance[1] = 0;
+//INPUT
+cout << "Enter a number of edges: ";
+int n;
+cin >> n;
+for (int i = 0; i < n; i++)
+{
+	int u, v;
+	cin >> u >> v;
+	graph[u].push_back(v);
+	graph[v].push_back(u);
+}
 
-	//BFS
-	queue <int> q;
-	q.push(1); // 1 - начальная вершина
-	used[1] = true;
-	while (!q.empty())
+//BFS
+queue <int> q;
+q.push(1); // 1 - начальная вершина
+used[1] = true;
+while (!q.empty())
+{
+	int current = q.front();
+	q.pop();
+	for (auto neighbor : graph[current])
 	{
-		int current = q.front();
-		q.pop();
-		for (auto neighbor : graph[current])
+		if (!used[neighbor])
 		{
-			if (!used[neighbor])
-			{
-				q.push(neighbor);
-				used[neighbor] = true;
-				distance[neighbor] = distance[current] + 1;
-			}
+			q.push(neighbor);
+			used[neighbor] = true;
+			distance[neighbor] = distance[current] + 1;
 		}
 	}
-	// OUTPUT
-	for (int i = 2; i <= n+1; i++)
-	{
-		if(distance[i] != -1)
-			cout << "Distance between vertices 1 and " << i << " is " << distance[i] << endl;
-		else
-			cout << "Vertex " << i << " cannot be reached from vertex 1." << endl;
-	}
+}
+// OUTPUT
+for (int i = 2; i <= n+1; i++)
+{
+	if(distance[i] != -1)
+		cout << "Distance between vertices 1 and " << i << " is " << distance[i] << endl;
+	else
+		cout << "Vertex " << i << " cannot be reached from vertex 1." << endl;
+}
 {% endhighlight %}
 Таким образом, мы обошли граф и посчитали расстояния между первой вершиной и всеми остальными вершинами.
