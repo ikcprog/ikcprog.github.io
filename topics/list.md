@@ -15,7 +15,6 @@ permalink: topics/
 * [**Итераторы и указатели**]({{ "topics/pointer/" | relative_url }})
 * [**Функции и процедуры**]({{ "topics/function/" | relative_url }})
 * [**Структуры и классы (Введение в ООП)**]({{ "topics/struct/" | relative_url }})
-* [Обзор библиотеки algorithm]({{ "topics/f/" | relative_url }})
 * [**Строки**]({{ "topics/string/" | relative_url }})
 * [**Динамический массив vector**]({{ "topics/vector/" | relative_url }})
 * [**Встроенные структуры данных**]({{ "topics/data_structures/" | relative_url }})
@@ -24,6 +23,7 @@ permalink: topics/
 
 ## Алгоритмы и Структуры данных
 * [**Сложность алгоритма**]({{ "topics/complexity analysis/" | relative_url }})
+* [Обзор библиотеки algorithm]({{ "topics/f/" | relative_url }})
 * [**Сортировки**]({{ "topics/sort/" | relative_url }})
 * [**Бинарный поиск**]({{ "topics/binsearch/" | relative_url }})
 * [**Алгоритм Евклида**]({{ "topics/gcd/" | relative_url }})
