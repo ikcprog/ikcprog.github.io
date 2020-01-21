@@ -107,3 +107,32 @@ cin >> a >> b >> c >> d;
 cout << "max: " << max(a, max(b, max(c, d))) << endl;
 cout << "min: " << min(a, min(b, min(c, d)));
 {% endhighlight %}
+
+## next_permutation/prev_permutation
+**next_permutation(first,last)** - позволяет выполнить перестановку в диапазоне
+**prev_permutation(first,last)** - позволяет выполнить обратную перестановку в диапазоне
+
+Пусть у нас имеется некоторая последовательность, для котрой мы хотим посмотреть все перестановки:
+{% highlight cpp %}
+vector<int>vec;
+
+sort(vec.begin(), vec.end());
+
+do {
+	for (auto x : vec)
+		cout << x << " ";
+	cout << endl;
+} while (next_permutation(vec.begin(), vec.end()));
+{% endhighlight %}
+
+## max_element/min_element
+**max_element(first,last)** - возвращает итератор на максимальный элемент в массиве
+**min_element(first,last)** - возвращает итератор на минимальный элемент в массиве
+
+{% highlight cpp %}
+vector<int>vec = { 1,2,3 };
+
+cout << *max_element(vec.begin(), vec.end()) << endl;
+cout << *min_element(vec.begin(), vec.end());
+{% endhighlight %}
+
