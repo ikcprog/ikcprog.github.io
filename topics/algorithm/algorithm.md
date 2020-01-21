@@ -101,3 +101,9 @@ else
 **min(a,b)** - берет минимум из двух чисел
 
 Если нам нужно найти максимум/минимум из $$n$$ чисел, то мы можем использовать следующее:
+{% highlight cpp %}
+int a, b, c, d;
+cin >> a >> b >> c >> d;
+cout << "max: " << max(a, max(b, max(c, d))) << endl;
+cout << "min: " << min(a, min(b, min(c, d)));
+{% endhighlight %}
