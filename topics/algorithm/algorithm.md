@@ -11,4 +11,19 @@ permalink: topics/algorithm/
 * value - значение
 
 ## count
-count(
+count(first, last, value)
+Возвращает количество элементов, равных value. Например, у нас имеется вектор, и мы хотим узнать, сколько в нём нулей:
+{% highlight cpp %}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	vector<int> vec = { 1,0,1,0,1,1,1 };
+	cout << count(vec.begin(), vec.end(), 0);
+	return 0;
+}
+{% endhighlight %}
