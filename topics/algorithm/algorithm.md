@@ -97,7 +97,6 @@ else
 
 ## max/min
 **max(a,b)** - берет максимум из двух чисел
-
 **min(a,b)** - берет минимум из двух чисел
 
 Если нам нужно найти максимум/минимум из $$n$$ чисел, то мы можем использовать следующее:
@@ -136,3 +135,18 @@ cout << *max_element(vec.begin(), vec.end()) << endl;
 cout << *min_element(vec.begin(), vec.end());
 {% endhighlight %}
 
+## remove
+**remove(first, last, value)**
+
+Удаляет все элементы со значением value
+
+## rotate
+**rotate(first, n_first, last)**
+
+Зеркально отражает последовательность. В данном случае n_first - элемент будет первым в последовательности. Также можно рассматривать как сдвиг. Рассмотрим на примере строк:
+
+{% highlight cpp %}
+string s = "abcd";
+rotate(s.begin(), s.begin() + 2, s.end());
+cout << s; // cdab
+{% endhighlight %}
