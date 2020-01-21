@@ -23,7 +23,7 @@ permalink: topics/
 
 ## Алгоритмы и Структуры данных
 * [**Сложность алгоритма**]({{ "topics/complexity analysis/" | relative_url }})
-* [Обзор библиотеки algorithm]({{ "topics/f/" | relative_url }})
+* [**Обзор библиотеки algorithm**]({{ "topics/algorithm/" | relative_url }})
 * [**Сортировки**]({{ "topics/sort/" | relative_url }})
 * [**Бинарный поиск**]({{ "topics/binsearch/" | relative_url }})
 * [**Алгоритм Евклида**]({{ "topics/gcd/" | relative_url }})
