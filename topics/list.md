@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Список тем
+title: Статьи
 permalink: topics/
 ---
 
@@ -39,9 +39,9 @@ permalink: topics/
 * [Бинарное дерево]({{ "topics/f/" | relative_url }})
 * [SQRT Decompose]({{ "topics/f/" | relative_url }})
 * [Система непересекающихся множеств]({{ "topics/f/" | relative_url }})
-* [Минимальное остовное дерево]({{ "topics/f/" | relative_url }})
-* [Префиксные суммы]({{ "topics/f/" | relative_url }})
-* [Дерево отрезков]({{ "topics/f/" | relative_url }})
-* [Дерево Фенвика]({{ "topics/f/" | relative_url }})
-* [Комбинаторика]({{ "topics/f/" | relative_url }})
-* [Динамическое программирование]({{ "topics/f/" | relative_url }})
+* [Минимальное остовное дерево]({{ "topics/404/" | relative_url }})
+* [Префиксные суммы]({{ "topics/404/" | relative_url }})
+* [Дерево отрезков]({{ "topics/404/" | relative_url }})
+* [Дерево Фенвика]({{ "topics/404/" | relative_url }})
+* [Комбинаторика]({{ "topics/404/" | relative_url }})
+* [Динамическое программирование]({{ "topics/404/" | relative_url }})
