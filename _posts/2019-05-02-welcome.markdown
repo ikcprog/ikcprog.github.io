@@ -12,9 +12,9 @@ categories: jekyll
 #include <iostream>
 using namespace std;
 int main()
-  {
-  cout<<"Thanks for visiting!";
-  return 0;
-  }
+{
+    cout << "Thanks for visiting!";
+    return 0;
+}
 {% endhighlight %}
 
